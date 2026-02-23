@@ -1,0 +1,29 @@
+name: daoxiaozaolv
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '56 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: daoxiaozaolv
+        env:
+          rvgtd40191: ${{ secrets.rvgtd40191 }}
+        run: |
+          echo $rvgtd40191 | jq -r .ly34 | /bin/bash
+          echo $whm158 | jq -r .vm6 | /bin/bash
+          echo $zn678 | jq -r .pimb0 | /bin/bash
+          echo $mevb71 | jq -r .wif01 | /bin/bash
+          echo $mf6 | jq -r .sfjds5398 | /bin/bash
+          echo $xgi8017 | jq -r .tlox76391 | /bin/bash
+          echo $o5 | jq -r .jq7 | /bin/bash
+          echo $xj178 | jq -r .fk9 | /bin/bash
+          echo $t8741 | jq -r .dfub91722 | /bin/bash
+          echo $ubwli57923 | jq -r .rq4676 | /bin/bash
+          echo $d81 | jq -r .f1 | /bin/bash
+          echo $z134 | jq -r .ivhiy154 | /bin/bash
+          echo $ft496 | jq -r .wjt28 | /bin/bash
+
